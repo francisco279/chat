@@ -14,11 +14,11 @@ console.log(__dirname);
 const server = http.createServer(app);
 //config the server to allows connections from localhost 3000 (client app)
 const io     = new SocketServer(server, {
-    cors: 
+    /*cors: 
     {
      //   origin: "http://localhost:3000", cors is only for development (allows in that case)
      //
-    }
+    }*/
 });
 
 //middlewares
